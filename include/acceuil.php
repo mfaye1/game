@@ -4,6 +4,7 @@ $page_title = 'Accueil';
 ?>
 
 <?php
+require_once 'views/top.php';
 require_once 'views/header.php';
 require_once 'views/aside.php';
 ?>
