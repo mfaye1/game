@@ -1,1 +1,5 @@
-<footer></footer>
+<footer>
+    <?php
+    require_once "menu.php";
+    ?>
+</footer>
