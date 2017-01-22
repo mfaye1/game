@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+aside, div, section, header, footer, nav {
+    display: block;
+}
+
+html{
+    font-size: 16px;
+    font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
+}
