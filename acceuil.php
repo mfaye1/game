@@ -6,11 +6,76 @@ $page_title = 'Accueil';
 <?php
 require_once 'views/top.php';
 require_once 'views/header.php';
+?>
+
+<?php
+$en_reception = array_key_exists('saisie_username', $_POST)&& array_key_exists('saisie_password', $_POST);
+
+
+//Reception du username
+$username='';
+$username_valide = true;
+if (array_key_exists('saisie_username', $_POST)) {
+    $username = filter_input(INPUT_POST, 'saisie_username', FILTER_SANITIZE_STRING);
+    $username_valide = (1 == preg_match('/\w{8,}/', $username));
+}
+//Reception du password
+$password='';
+$password_valide = true;
+
+if (array_key_exists('saisie_password', $_POST)){
+    $password = filter_input(INPUT_POST, 'saisie_password', FILTER_SANITIZE_STRING);
+    $password_valide = (1 == preg_match('/^[A-Z]\w{3,}[0-9]{2,}/', $password));
+}
+
+if ($en_reception && $username_valide && $password_valide)
+
+//    header('Location:')
+
+?>
+
+<body>
+
+<main>
+
+<div id="carrousel" class="row">
+    <figure class="">
+        <img src="#" alt="img_1">
+        <img src="#" alt="img_2">
+        <img src="#" alt="img_3">
+        <img src="#" alt="img_4">
+    </figure>
+</div>
+
+<?php
 require_once 'views/aside.php';
 ?>
-<main>
-    <h2>la page acceuil</h2>
+    <aside>
+        <h2>Inscription</h2>
+        <form id="inscription" action="<?=basename(__FILE__)?>" method="post">
+
+            <div class="<?=$username_valide ? '' : 'invalide'?>">
+                <label for="saisie_username">Pseudo : </label>
+                <input type="text" placeholder="(entrez votre username)" id="saisie_username" name="saisie_username" value="<?=$username?>"/>
+                <?php if (!$username_valide){?>
+                    <p>Le pseudo doit contenir au moins 8 caractère.</p>
+                <?php } ?>
+            </div>
+            <div class="<?=$password_valide ? '' : 'invalide'?>">
+                <label for="saisie_password">Mod de passe : </label>
+                <input type="password" placeholder="(entrez votre password)" id="saisie_password" name="saisie_password" value="<?=$password?>"/>
+                <?php if (!$password_valide){?>
+                    <p>Le password doit contenir 6 caractère et commencer par un Majuscule, contenir 2 chiffres.</p>
+                <?php } ?>
+            </div>
+            <div>
+                <input type="submit" value="Soumettre"/>
+            </div>
+        </form>
+    </aside>
 </main>
+
 <?php
 require_once 'views/footer.php';
 ?>
+</body>
