@@ -5,27 +5,11 @@ $page_title = 'Contact';
 <?php
 require_once 'views/header.php';
 require_once 'views/aside.php';
+require_once 'views/top.php'
 ?>
 <?php
 
 ?>
-<style>
-    form{
-        width: 60%;
-    }
-    div{
-        margin-bottom: 2%;
-        display: block;
-    }
-    #wrapper{
-        width: 80%;
-        margin: auto;
-    }
-    label{
-        display: inline-block;
-        width: 30%;
-    }
-</style>
 <div id="wrapper">
 <main>
     <form method="post">
@@ -39,10 +23,14 @@ require_once 'views/aside.php';
         </div>
         <div>
             <label for="email">Email: </label>
-            <input type="text" id="email" name="email" placeholder="example@emample.con" value="">
+            <input type="email" id="email" name="email" placeholder="example@emample.con" value="">
         </div>
         <div>
-            <label for="">confirmez votre Email: </label>
+            <label for="">Mot De Passe: </label>
+            <input type="password" id="" name="" placeholder="" value="">
+        </div>
+        <div>
+            <label for="">Confirmation Mot De Passe: </label>
             <input type="text" id="" name="" placeholder="" value="">
         </div>
         <div>
@@ -63,6 +51,9 @@ require_once 'views/aside.php';
                 <option value="ga">Gâtineau</option>
                 <option value="sh">Sherbrooke</option>
             </select>
+        </div>
+        <div>
+            <input type="submit" value="Inscription">
         </div>
 
     </form>
