@@ -9,6 +9,9 @@ html{
     font-size: 16px;
     font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
 }
+#wrapper{
+    width: 80%;
+}
 /*------------------------------------le grille------------------------------------------------*/
 [class*="col-"] {
     float: left;
@@ -45,16 +48,16 @@ html{
 }
 #menu-deroulant ul {
     padding:0;
-    margin:0;
+    margin-bottom:5%;
     list-style:none;
     text-align: center;
 }
 #menu-deroulant li {
+    margin-bottom:7%;
     background-color:#729EBF;
     background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
     border-radius: 6px;
-    margin-bottom:2px;
     box-shadow: 3px 3px 3px #999;
     border:solid 1px #333A40
 }
@@ -93,9 +96,36 @@ html{
     max-height: 15em;
 }
 aside{
-    width: 30%;
+    width: 40%;
+}
+/*-----------------le formulaire------------------*/
+form {
+    width: 60%;
 }
 
+div {
+    margin-bottom: 3%;
+    display: block;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    width: 35%;
+}
+
+.invalid input {
+    border: solid 2px red;
+}
+
+.invalid p {
+    color: red;
+    margin-left: 35%;
+}
 /*****************--------willy verrier--------*******/
 
 h2{

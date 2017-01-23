@@ -3,9 +3,8 @@ require_once 'define.php';
 $page_title = 'Contact';
 ?>
 <?php
+require_once 'views/top.php';
 require_once 'views/header.php';
-require_once 'views/aside.php';
-require_once 'views/top.php'
 ?>
 <?php
 $liste_ville = array('choisir.', 'Montreal', 'Gâtineau', 'Sherbrooke', 'Quebec');
@@ -82,36 +81,10 @@ if ($reception && empty($ville)) {
 
 
 ?>
-<style>
-    form {
-        width: 60%;
-    }
-
-    div {
-        margin-bottom: 3%;
-        display: block;
-    }
-
-    #wrapper {
-        width: 80%;
-        margin: auto;
-    }
-
-    label {
-        display: inline-block;
-        width: 35%;
-    }
-
-    .invalid input {
-        border: solid 2px red;
-    }
-
-    .invalid p {
-        color: red;
-        margin-left: 35%;
-    }
-</style>
 <div id="wrapper">
+    <div class="row">
+
+        <div class="col-9">
     <main>
         <form id="form" method="post">
             <div class="<?= $nom_valide ? '' : 'invalid' ?>">
@@ -202,6 +175,13 @@ if ($reception && empty($ville)) {
 
         </form>
     </main>
+        </div>
+        <div class="col-3">
+            <?php
+            require_once 'views/aside.php';
+            ?>
+        </div>
+    </div>
 </div>
 <?php
 require_once 'views/footer.php';
