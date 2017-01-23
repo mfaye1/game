@@ -36,35 +36,64 @@ html{
 .col-12 {width: 100%;}
 
 /*****************-------------------Le aside ------------------*/
-#menu-deroulant, #menu-deroulant ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 #menu-deroulant {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+    width: 180px;
+}
+#menu-deroulant ul {
+    padding:0;
+    margin:0;
+    list-style:none;
     text-align: center;
 }
 #menu-deroulant li {
-    display: inline-block;
+    background-color:#729EBF;
+    background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    border-radius: 6px;
+    margin-bottom:2px;
+    box-shadow: 3px 3px 3px #999;
+    border:solid 1px #333A40
 }
-#menu-deroulant ul li {
-    display: inherit;
+#menu-deroulant li li {
+    max-height:0;
+    overflow: hidden;
+    transition: all .5s;
+    border-radius:0;
+    background: #444;
+    box-shadow: none;
+    border:none;
+    margin:0
 }
 #menu-deroulant a {
+    display:block;
     text-decoration: none;
-    display: block;
-    color:#000;
+    color: #fff;
+    padding: 8px 0;
+    font-family: verdana;
+    font-size:1.2em
 }
-#menu-deroulant ul {
-    position: absolute;
-    /* on cache les sous menus complètement sur la gauche */
-    left: -999em;
-    text-align: left;
-    z-index: 1000;
+#menu-deroulant ul li a, #menu-deroulant li:hover li a {
+    font-size:1em
 }
-#menu-deroulant li:hover ul {
-    /* Au survol des li du menu on replace les sous menus */
-    left: auto;
+#menu-deroulant li:hover {
+    background: #729EBF
+}
+#menu-deroulant li li:hover {
+    background: #999;
+}
+#menu-deroulant ul li:last-child {
+    border-radius: 0 0 6px 6px;
+    border:none;
+}
+#menu-deroulant li:hover li {
+    max-height: 15em;
+}
+aside{
+    width: 30%;
 }
 
 /*****************--------willy verrier--------*******/

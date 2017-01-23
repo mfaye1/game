@@ -8,16 +8,16 @@
     }
     #menu-deroulant ul {
         padding:0;
-        margin:0;
+        margin-bottom:5%;
         list-style:none;
         text-align: center;
     }
     #menu-deroulant li {
+        margin-bottom:7%;
         background-color:#729EBF;
         background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
         background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
         border-radius: 6px;
-        margin-bottom:2px;
         box-shadow: 3px 3px 3px #999;
         border:solid 1px #333A40
     }
