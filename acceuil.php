@@ -37,7 +37,7 @@ if ($en_reception && $username_valide && $password_valide)
 <body>
 
 <main>
-
+      <div id="wrapper">
     <div id="carrousel" class="row">
         <figure class="">
             <img src="#" alt="img_1">
@@ -127,9 +127,11 @@ if ($en_reception && $username_valide && $password_valide)
             condimentum. In semper nisl sed mollis aliquet. Nunc quis sapien vestibulum, vulputate justo a, vestibulum
             nibh.</p>
     </section>
+      </div>
 </main>
 
 <?php
 require_once 'views/footer.php';
 ?>
 </body>
+</html>

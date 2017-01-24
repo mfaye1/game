@@ -1,5 +1,5 @@
 <footer>
     <?php
-    require_once "menu.php";
+    include "menu.php";
     ?>
 </footer>
