@@ -49,7 +49,7 @@ body{
 .col-12 {width: 100%;}
 
 /*******************************-----HEADER--------------------*/
-nav ul li{
+ul li{
     list-style-type: none;
 }
 li a{
