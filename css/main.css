@@ -11,6 +11,16 @@ html{
 }
 #wrapper{
     width: 80%;
+    margin: auto;
+    background-color:#729EBF;
+    background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px #999;
+    border:solid 1px #333A40
+}
+body{
+    background-image: url("http://www.wallpapersshock.com/uploads/large/hd-games-wallpapers/free-games-lineage-beautiful-wallpapers-hd-download.jpg");
 }
 /*------------------------------------le grille------------------------------------------------*/
 [class*="col-"] {
@@ -38,6 +48,13 @@ html{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+/*******************************-----HEADER--------------------*/
+nav ul li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+}
 /*****************-------------------Le aside ------------------*/
 #menu-deroulant {
     padding:0;
@@ -76,7 +93,6 @@ html{
     text-decoration: none;
     color: #fff;
     padding: 8px 0;
-    font-family: verdana;
     font-size:1.2em
 }
 #menu-deroulant ul li a, #menu-deroulant li:hover li a {
@@ -95,22 +111,11 @@ html{
 #menu-deroulant li:hover li {
     max-height: 15em;
 }
-aside{
-    width: 40%;
-}
-/*-----------------le formulaire------------------*/
-form {
-    width: 60%;
-}
 
+/*-----------------le formulaire------------------*/
 div {
     margin-bottom: 3%;
     display: block;
-}
-
-#wrapper {
-    width: 80%;
-    margin: auto;
 }
 
 label {
@@ -131,4 +136,3 @@ label {
 h2{
     color: red;
 }
-
