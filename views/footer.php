@@ -1,1 +1,5 @@
-<footer></footer>
+<footer>
+    <?php
+    include "menu.php";
+    ?>
+</footer>
