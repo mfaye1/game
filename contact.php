@@ -45,7 +45,8 @@ $telephone = '';
 $telephone_valide = true;
 if (array_key_exists('saisi_telephone', $_POST)) {
     $telephone = filter_input(INPUT_POST, 'saisi_telephone', FILTER_SANITIZE_STRING);
-    $telephone_valide = (1 === preg_match('#(\+[0-9]{1}\([0-9]\))?[0-9]{10}#', $telephone));
+    /*$telephone_valide = (1 === preg_match('#(\+[0-9]{1}\([0-9]\))?[0-9]{10}#', $telephone));*/
+    $telephone_valide = (1 === preg_match('/^((([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+)*$/', $telephone));
 
 }
 /*validation des mots de pass */
@@ -53,16 +54,18 @@ $password = '';
 $password_valide = true;
 if (array_key_exists('saisi_password', $_POST)) {
     $password = filter_input(INPUT_POST, 'saisi_password', FILTER_SANITIZE_STRING);
-    $password_valide = (1 === preg_match('/[A-Za-z0-9]\w{1,}/',$password));
+    $password_valide = (1 === preg_match('/[A-Za-z0-9]\w{7,}/',$password));
 }
-/*laaaa confirmation*/
-$confirmation = '';
-$confirmation_valide = true;
-if (array_key_exists('saisi_confirmation', $_POST)) {
-    $confirmation = filter_input(INPUT_POST, 'saisi_password', FILTER_SANITIZE_STRING);
-    $confirmation_valide = (1 === preg_match('/[A-Za-z0-9]\w{1,}/',$confirmation));
+/*laaaa password2*/
+$password2 = '';
+$password2_valide = true;
+if (array_key_exists('saisi_password2', $_POST)) {
+    $password2 = filter_input(INPUT_POST, 'saisi_password2', FILTER_SANITIZE_STRING);
+    if ($password !== $password2){
+        $password2_valide = false ;
+    }
 }
-if ($password !== $confirmation){
+if ($password !== $password2){
     echo "<p>les deux mot de pass ne sont pas identique</p>";
 }
 
@@ -90,7 +93,7 @@ if ($reception && empty($ville)) {
 /**********************************************/
 
 if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide && $telephone_valide
-    && $ville_valide && $password_valide && $confirmation_valide
+    && $ville_valide && $password_valide && $password2_valide
 ) {
     // Les données de formulaire sont valides
     header('Location:inscrire.php');
@@ -100,7 +103,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
 <div id="wrapper">
     <div class="row">
 
-        <div class="col-9">
+        <div class="col-11">
     <main>
         <form id="form" method="post">
             <div class="<?= $nom_valide ? '' : 'invalid' ?>">
@@ -147,27 +150,26 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 ?>
             </div>
 
-            <div class="">
+            <div class="<?= $password_valide ? '' : 'invalid' ?>">
                 <label for="saisi_password">Mot De Passe: </label>
                 <input type="password" id="saisi_password" name="saisi_password"  value="<?=$password?>">
                 <?php
                 if (!$password_valide) {
-                    echo "<p>veuillez indiquer un mot de passe </p>";
+                    echo "<p>veuillez indiquer un mot de passe de 8 caracteres minimum</p>";
 
                 }
                 ?>
             </div>
-            <div>
-                <label for="saisi_confirmation">Confirmation Mot De Passe: </label>
-                <input type="password" id="saisi_confirmation" name="saisi_confirmation"  value="<?=$confirmation?>">
+            <div class="<?= $password2_valide ? '' : 'invalid' ?>">
+                <label for="saisi_password2">confirmer le Mot De Passe: </label>
+                <input type="password" id="saisi_password2" name="saisi_password2"  value="<?=$password2?>">
                 <?php
-                if (!$confirmation_valide) {
-                    echo "<p>veuillez confirmer le mot de passe</p>";
-
+                if (!$password2_valide) {
+                    echo "<p>les deux mots de passe ne sont pas identique</p>";
                 }
                 ?>
             </div>
-            <div>
+            <div class="<?= $sexe_valide ? '' : 'invalid' ?>">
                 <label for="sexe">Sexe: </label>
                 Homme <input type="radio" name="sexe[]" id="sexe" value="H">
                 Femme <input type="radio" name="sexe[]" id="sexe" value="F">
@@ -175,7 +177,6 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
                 <?php
                 if (!$sexe_valide) {
                     echo "<p>veuillez cochez au moins une case</p>";
-
                 }
                 ?>
 
@@ -206,7 +207,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
         </form>
     </main>
         </div>
-        <div class="col-3">
+        <div class="col-1">
             <?php
             require_once 'views/aside.php';
             ?>
