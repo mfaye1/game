@@ -100,11 +100,11 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
     exit;
 }
 ?>
+<body>
 <div id="wrapper">
     <div class="row">
 
-        <div class="col-11">
-    <main>
+    <main class="col-9">
         <form id="form" method="post">
             <div class="<?= $nom_valide ? '' : 'invalid' ?>">
                 <label for="saisi_nom">Nom: </label>
@@ -206,14 +206,15 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
 
         </form>
     </main>
-        </div>
-        <div class="col-1">
+        <div class="col-3">
             <?php
             require_once 'views/aside.php';
             ?>
         </div>
+        </div>
+
     </div>
-</div>
 <?php
 require_once 'views/footer.php';
 ?>
+</body>

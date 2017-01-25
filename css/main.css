@@ -93,7 +93,6 @@ li a{
     text-decoration: none;
     color: #fff;
     padding: 8px 0;
-    font-family: verdana;
     font-size:1.2em
 }
 #menu-deroulant ul li a, #menu-deroulant li:hover li a {
@@ -121,7 +120,7 @@ div {
 
 label {
     display: inline-block;
-    width: 45%;
+    width: 35%;
 }
 
 .invalid input {
