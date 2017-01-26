@@ -39,4 +39,7 @@
             </ul>
         </li>
     </ul>
+    <marquee direction="down" scrollamount="2" onMouseOver="this.stop();" onMouseOut="this.start();">
+        Mon texte défile doucement
+    </marquee
 </aside>
