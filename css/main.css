@@ -20,8 +20,13 @@ html{
     border:solid 1px #333A40
 }
 body{
+
     background-image: url("http://www.wallpapersshock.com/uploads/large/hd-games-wallpapers/free-games-lineage-beautiful-wallpapers-hd-download.jpg");
+
+   background-image: url("http://www.wallpapersshock.com/uploads/large/hd-games-wallpapers/free-games-lineage-beautiful-wallpapers-hd-download.jpg");
+
 }
+
 /*------------------------------------le grille------------------------------------------------*/
 [class*="col-"] {
     float: left;
