@@ -54,18 +54,18 @@ $password = '';
 $password_valide = true;
 if (array_key_exists('saisi_password', $_POST)) {
     $password = filter_input(INPUT_POST, 'saisi_password', FILTER_SANITIZE_STRING);
-    $password_valide = (1 === preg_match('/[A-Za-z0-9]\w{7,}/',$password));
+    $password_valide = (1 === preg_match('/[A-Za-z0-9]\w{7,}/', $password));
 }
 /*laaaa password2*/
 $password2 = '';
 $password2_valide = true;
 if (array_key_exists('saisi_password2', $_POST)) {
     $password2 = filter_input(INPUT_POST, 'saisi_password2', FILTER_SANITIZE_STRING);
-    if ($password !== $password2){
-        $password2_valide = false ;
+    if ($password !== $password2) {
+        $password2_valide = false;
     }
 }
-if ($password !== $password2){
+if ($password !== $password2) {
     echo "<p>les deux mot de pass ne sont pas identique</p>";
 }
 
@@ -101,10 +101,8 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
 }
 ?>
 <body>
-<div id="wrapper">
-    <div class="row">
-
-    <main class="col-9">
+<div id="wrapper" class="row">
+    <div class="col-9">
         <form id="form" method="post">
             <div class="<?= $nom_valide ? '' : 'invalid' ?>">
                 <label for="saisi_nom">Nom: </label>
@@ -130,7 +128,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
 
             <div class="<?= $telephone_valide ? '' : 'invalid' ?>">
                 <label for="saisi_telephone">Telephone: </label>
-                <input type="text" id="saisi_telephone" name="saisi_telephone"  placeholder="***-***-****"
+                <input type="text" id="saisi_telephone" name="saisi_telephone" placeholder="***-***-****"
                        value="<?= $telephone ?>">
                 <?php
                 if (!$telephone_valide) {
@@ -141,7 +139,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
 
             <div class="<?= $email_valide ? '' : 'invalid' ?>">
                 <label for="saisi_email">Email: </label>
-                <input type="text" id="saisi_email" name="saisi_email"  placeholder="example@emample.con"
+                <input type="text" id="saisi_email" name="saisi_email" placeholder="example@emample.con"
                        value="<?= $email ?>">
                 <?php
                 if (!$email_valide) {
@@ -152,7 +150,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
 
             <div class="<?= $password_valide ? '' : 'invalid' ?>">
                 <label for="saisi_password">Mot De Passe: </label>
-                <input type="password" id="saisi_password" name="saisi_password"  value="<?=$password?>">
+                <input type="password" id="saisi_password" name="saisi_password" value="<?= $password ?>">
                 <?php
                 if (!$password_valide) {
                     echo "<p>veuillez indiquer un mot de passe de 8 caracteres minimum</p>";
@@ -162,7 +160,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
             </div>
             <div class="<?= $password2_valide ? '' : 'invalid' ?>">
                 <label for="saisi_password2">confirmer le Mot De Passe: </label>
-                <input type="password" id="saisi_password2" name="saisi_password2"  value="<?=$password2?>">
+                <input type="password" id="saisi_password2" name="saisi_password2" value="<?= $password2 ?>">
                 <?php
                 if (!$password2_valide) {
                     echo "<p>les deux mots de passe ne sont pas identique</p>";
@@ -187,7 +185,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
             </div>
             <div>
                 <label for="ville">ville: </label>
-                <select name="ville[]" id="ville" multiple="multiple" >
+                <select name="ville[]" id="ville" multiple="multiple">
                     <?php foreach ($liste_ville as $ville) {
                         $option_value = retire_accents($ville);
                         ?>
@@ -205,15 +203,9 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
             </div>
 
         </form>
-    </main>
-        <div class="col-3">
-            <?php
-            require_once 'views/aside.php';
-            ?>
-        </div>
-        </div>
-
     </div>
+</div>
+
 <?php
 require_once 'views/footer.php';
 ?>

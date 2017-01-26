@@ -55,6 +55,7 @@ ul li{
 li a{
     text-decoration: none;
 }
+
 /*****************-------------------Le aside ------------------*/
 #menu-deroulant {
     padding:0;
@@ -131,6 +132,58 @@ label {
     color: red;
     margin-left: 35%;
 }
+/******************-----le tableau-------------*/
+table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    caption-side: bottom;
+}
+td, th {
+    padding: 6px 12px;
+}
+th {
+    text-align: left;
+}
+td:last-child, th:last-child {
+    text-align: right;
+}
+table caption {
+    color: white;
+    font-style: italic;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+tr:nth-child(odd) {
+    background: #eee;
+}
+tr:nth-child(even) {
+    background: #ddd;
+}
+tr:first-child {
+    background: #cba;
+    color: white;
+}
+table td:empty {
+    background: white;
+}
+table tr + tr:hover {
+    background: #bbb;
+    color:white;
+}
+table tr + tr td:hover, table tr + tr th:hover {
+    background: #777;
+    cursor:pointer;
+}
+fieldset {
+    width: 85%;
+}
+
+#tab {
+    width: 100%;
+}
+
+
 /*****************--------willy verrier--------*******/
 
 h2{
