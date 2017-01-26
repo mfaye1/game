@@ -37,47 +37,32 @@ if ($en_reception && $username_valide && $password_valide)
 <body>
 
 <div id="wrapper">
-<div class="row">
-        <div class="col-9">
+    <div id="wowslider-container1">
+        <div class="ws_images"><ul>
+                <li><img src="data1/images/slide2.png" alt="" title="" id="wows1_0"/></li>
+                <li><img src="data1/images/slide3.jpg" alt="" title="" id="wows1_1"/></li>
+                <li><img src="data1/images/slide3_0.png" alt="" title="" id="wows1_2"/></li>
+                <li><img src="data1/images/slide4.jpg" alt="" title="" id="wows1_3"/></li>
+                <li><a href="http://wowslider.com/vi"><img src="data1/images/slide7.jpg" alt="bootstrap carousel" title="" id="wows1_4"/></a></li>
+                <li><img src="data1/images/slider8.jpg" alt="" title="" id="wows1_5"/></li>
+            </ul></div>
+        <div class="ws_bullets"><div>
+                <a href="#" title=""><span><img src="data1/tooltips/slide2.png" alt=""/>1</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/slide3.jpg" alt=""/>2</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/slide3_0.png" alt=""/>3</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/slide4.jpg" alt=""/>4</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/slide7.jpg" alt=""/>5</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/slider8.jpg" alt=""/>6</span></a>
+            </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+        <div class="ws_shadow"></div>
+    </div>
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+    <div class="row">
+        <div class="col-8">
             <main>
-                <div id="carrousel" class="row">
-                    <figure class="">
-                        <img src="#" alt="img_1">
-                        <img src="#" alt="img_2">
-                        <img src="#" alt="img_3">
-                        <img src="#" alt="img_4">
-                    </figure>
-                </div>
 
 
-                <aside>
-                    <h2>Inscription</h2>
-                    <form id="inscription" action="<?= basename(__FILE__) ?>" method="post">
-
-                        <div class="<?= $username_valide ? '' : 'invalide' ?>">
-                            <label for="saisie_username">Pseudo : </label>
-                            <input type="text" placeholder="(entrez votre username)" id="saisie_username"
-                                   name="saisie_username"
-                                   value="<?= $username ?>"/>
-                            <?php if (!$username_valide) { ?>
-                                <p>Le pseudo doit contenir au moins 8 caractère.</p>
-                            <?php } ?>
-                        </div>
-                        <div class="<?= $password_valide ? '' : 'invalide' ?>">
-                            <label for="saisie_password">Mod de passe : </label>
-                            <input type="password" placeholder="(entrez votre password)" id="saisie_password"
-                                   name="saisie_password"
-                                   value="<?= $password ?>"/>
-                            <?php if (!$password_valide) { ?>
-                                <p>Le password doit contenir 6 caractère et commencer par un Majuscule, contenir 2
-                                    chiffres.</p>
-                            <?php } ?>
-                        </div>
-                        <div>
-                            <input type="submit" value="Soumettre"/>
-                        </div>
-                    </form>
-                </aside>
                 <h2>Nouveauté</h2>
                 <section>
                     <div class="cadre_produit">
@@ -140,16 +125,66 @@ if ($en_reception && $username_valide && $password_valide)
                 </section>
             </main>
         </div>
-        <div class="col-3">
+        <div class="col-4" id="aside">
 
-            <?php
-            require_once 'views/aside.php';
-            ?>
+            <div id="connexion">
+                <h2>CONNEXION</h2>
+                <form id="inscription" action="<?= basename(__FILE__) ?>" method="post">
+
+                    <div class="<?= $username_valide ? '' : 'invalid' ?>">
+                        <label for="saisie_username">Pseudo : </label>
+                        <input type="text" placeholder="entrez votre username" id="saisie_username"
+                               name="saisie_username"
+                               value="<?= $username ?>"/>
+                        <?php if (!$username_valide) { ?>
+                            <p>Le pseudo ou le mot de passe est incorrect</p>
+                        <?php } ?>
+                    </div>
+                    <div class="<?= $password_valide ? '' : 'invalid' ?>">
+                        <label for="saisie_password">Mod de passe : </label>
+                        <input type="password" placeholder="entrez votre password" id="saisie_password"
+                               name="saisie_password"
+                               value="<?= $password ?>"/>
+                        <?php if (!$password_valide) { ?>
+                            <p>Le pseudo ou le mot de passe est incorrect</p>
+                        <?php } ?>
+                    </div>
+                    <div>
+                        <label></label>
+                        <input type="submit" value="connexion"/>
+                    </div>
+                </form>
+                <div>
+                    <a href="contact.php">s'inscrire</a>
+                </div>
+            </div>
+            <div id="defillement">
+                <marquee  direction="down" scrollamount="4" onMouseOver="this.stop();" onMouseOut="this.start();">
+                    <ul>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                        <li><a href="#">le <span></span> sera disponible a partir du</a></li>
+                    </ul>
+                </marquee
+            </div>
+
         </div>
     </div>
 </div>
-    <?php
-    require_once 'views/footer.php';
-    ?>
-</body>
 
+</body>
+<?php
+require_once 'views/footer.php';
+?>

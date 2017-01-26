@@ -60,6 +60,14 @@ ul li{
 li a{
     text-decoration: none;
 }
+#carrousel{
+    height: 300px;
+    width: 100%;
+}
+#wowslider-container1 div{
+    margin: 0;
+    width:100% ;
+}
 
 /*****************-------------------Le aside ------------------*/
 #menu-deroulant {
@@ -117,7 +125,24 @@ li a{
 #menu-deroulant li:hover li {
     max-height: 15em;
 }
+#connexion{
+    margin-bottom: 25%;
+}
+#defillement{
+    height: 400px;
+    padding-left: 0;
+}
+#defillement ul li a{
+    list-style-type: none;
+    text-align:left;
+}
+#connexion div{
+    margin-bottom: 10%;
 
+}
+#connexion h2{
+    text-align: center;
+}
 /*-----------------le formulaire------------------*/
 div {
     margin-bottom: 3%;

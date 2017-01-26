@@ -45,8 +45,8 @@ $telephone = '';
 $telephone_valide = true;
 if (array_key_exists('saisi_telephone', $_POST)) {
     $telephone = filter_input(INPUT_POST, 'saisi_telephone', FILTER_SANITIZE_STRING);
-    /*$telephone_valide = (1 === preg_match('#(\+[0-9]{1}\([0-9]\))?[0-9]{10}#', $telephone));*/
-    $telephone_valide = (1 === preg_match('/^((([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+)*$/', $telephone));
+       $telephone_valide = (1 === preg_match('#(\+[0-9]{1}\([0-9]\))?[0-9]{7}#', $telephone));
+//    $telephone_valide = (1 === preg_match('/^((([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+)*$/', $telephone));
 
 }
 /*validation des mots de pass */
@@ -128,7 +128,7 @@ if ($reception && $nom_valide && $prenom_valide && $email_valide && $sexe_valide
 
             <div class="<?= $telephone_valide ? '' : 'invalid' ?>">
                 <label for="saisi_telephone">Telephone: </label>
-                <input type="text" id="saisi_telephone" name="saisi_telephone" placeholder="***-***-****"
+                <input type="text" id="saisi_telephone" name="saisi_telephone" maxlength="10" placeholder="***-***-****"
                        value="<?= $telephone ?>">
                 <?php
                 if (!$telephone_valide) {
