@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-aside, div, section, header, footer, nav {
+aside, div, section, header, footer, header div {
     display: block;
 }
 
@@ -22,9 +22,6 @@ html{
 body{
 
     background-image: url("http://www.wallpapersshock.com/uploads/large/hd-games-wallpapers/free-games-lineage-beautiful-wallpapers-hd-download.jpg");
-
-   background-image: url("http://www.wallpapersshock.com/uploads/large/hd-games-wallpapers/free-games-lineage-beautiful-wallpapers-hd-download.jpg");
-
 }
 
 /*------------------------------------le grille------------------------------------------------*/
@@ -60,6 +57,77 @@ ul li{
 li a{
     text-decoration: none;
 }
+header{
+    margin-bottom: 0.1%;
+    display: block;
+    position: relative;
+    background-color:#729EBF;
+    background-image:-webkit-linear-gradient(top, #214767 20%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #214767 20%, #333A40 100%);
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px #999;
+    border:solid 1px #333A40
+}
+/***************les animation du li******/
+header div{
+    height: 100px;
+    padding: 0;
+}
+
+header div ul.row{
+    display: inline;
+    line-height: 100px;
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+li.col-{
+    display: inline;
+    padding: 0;
+    text-align: center;
+}
+header div ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all 2s;
+}
+
+header div ul li a,
+header div ul li a:after,
+header div ul li a:before {
+    transition: all .5s;
+}
+
+header div ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -5px auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+header div ul li a:hover:after {
+    width: 100%;
+}
+
+header div ul li a:hover {
+    color: #729EBF;
+    transform: scale(1.3);
+    z-index: 1;
+}
+header div ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+/*/*************carrousel************************/
 #carrousel{
     height: 300px;
     width: 100%;

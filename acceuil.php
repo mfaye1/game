@@ -155,7 +155,7 @@ if ($en_reception && $username_valide && $password_valide)
                     </div>
                 </form>
                 <div>
-                    <a href="contact.php">s'inscrire</a>
+                    <a href="inscription.php">s'inscrire</a>
                 </div>
             </div>
             <div id="defillement">
