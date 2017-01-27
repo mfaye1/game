@@ -20,7 +20,6 @@ html{
     border:solid 1px #333A40
 }
 body{
-
     background-image: url("http://www.wallpapersshock.com/uploads/large/hd-games-wallpapers/free-games-lineage-beautiful-wallpapers-hd-download.jpg");
 }
 
@@ -204,12 +203,23 @@ header div ul li a:hover:after {
     list-style-type: none;
     text-align:left;
 }
-#connexion div{
+#connexion form div{
     margin-bottom: 10%;
-
+}
+#login_btn,#logout_btn{
+    margin-left: 45%;
+}
+#connexion p{
+    color: red;
 }
 #connexion h2{
     text-align: center;
+}
+#connexion a {
+    text-decoration: none;
+    color: white;
+    margin-left: 45%;
+
 }
 /*-----------------le formulaire------------------*/
 div {

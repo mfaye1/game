@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 require_once 'define.php';
 $page_title = 'contact';
@@ -7,8 +6,12 @@ $page_title = 'contact';
 require_once 'views/top.php';
 require_once 'views/header.php';
 ?>
-<div id="wrapper">
+<p id="wrapper">
+    <p>Vous pouvez nous contacter a partir des adresses suivantes ou bien nous envoyer un  commentaire aussi</p>
+    <form>
 
+        <input type="text" id="objet" name="objet" >
+    </form>
     <img src="images/le_map.png">
 </div>
 
