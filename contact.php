@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 require_once 'define.php';
 $page_title = 'contact';
