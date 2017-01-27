@@ -1,25 +1,28 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 aside, div, section, header, footer, header div {
     display: block;
 }
 
-html{
+html {
     font-size: 16px;
     font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
 }
-#wrapper{
+
+#wrapper {
     width: 80%;
     margin: auto;
-    background-color:#729EBF;
-    background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+    background-color: #729EBF;
+    background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
     border-radius: 6px;
     box-shadow: 3px 3px 3px #999;
-    border:solid 1px #333A40
+    border: solid 1px #333A40
 }
-body{
+
+body {
     background-image: url("http://www.wallpapersshock.com/uploads/large/hd-games-wallpapers/free-games-lineage-beautiful-wallpapers-hd-download.jpg");
 }
 
@@ -28,64 +31,105 @@ body{
     float: left;
     padding: 11px 15px;
 }
-.row:after{
+
+.row:after {
     content: "";
     clear: both;
     display: block;
 }
 
-
 /*------------------------------grille de desktop-------------------------------------------------------*/
-.col-1  {width: 8.33%;}
-.col-2  {width: 16.66%;}
-.col-3  {width: 25%;}
-.col-4  {width: 33.33%;}
-.col-5  {width: 41.66%;}
-.col-6  {width: 50%;}
-.col-7  {width: 58.33%;}
-.col-8  {width: 66.66%;}
-.col-9  {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 /*******************************-----HEADER--------------------*/
-ul li{
+ul li {
     list-style-type: none;
 }
-li a{
+
+li a {
     text-decoration: none;
 }
-header{
+
+header {
     margin-bottom: 0.1%;
+    height: 150px;
     display: block;
     position: relative;
-    background-color:#729EBF;
-    background-image:-webkit-linear-gradient(top, #214767 20%, #333A40 100%);
+    background-color: #729EBF;
+    background-image: -webkit-linear-gradient(top, #214767 20%, #333A40 100%);
     background-image: linear-gradient(to bottom, #214767 20%, #333A40 100%);
     border-radius: 6px;
     box-shadow: 3px 3px 3px #999;
-    border:solid 1px #333A40
+    border: solid 1px #333A40
 }
+
 /***************les animation du li******/
-header div{
+header div {
     height: 100px;
     padding: 0;
 }
 
-header div ul.row{
+header div ul.row {
     display: inline;
     line-height: 100px;
     list-style-type: none;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
-li.col-{
+
+li.col- {
     display: inline;
     padding: 0;
     text-align: center;
 }
-header div ul li a{
+
+header div ul li a {
     text-decoration: none;
     color: white;
     position: relative;
@@ -98,18 +142,19 @@ header div ul li a:before {
     transition: all .5s;
 }
 
-header div ul li a:after{
+header div ul li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     margin: -5px auto;
-    width: 0%;
+    width: 0;
     content: '.';
     color: transparent;
     background: #aaa;
     height: 1px;
 }
+
 header div ul li a:hover:after {
     width: 100%;
 }
@@ -119,6 +164,7 @@ header div ul li a:hover {
     transform: scale(1.3);
     z-index: 1;
 }
+
 header div ul li a:hover:after {
     z-index: -10;
     animation: fill 1s forwards;
@@ -126,103 +172,112 @@ header div ul li a:hover:after {
     -moz-animation: fill 1s forwards;
     opacity: 1;
 }
+
 /*/*************carrousel************************/
-#carrousel{
+#carrousel {
     height: 300px;
     width: 100%;
 }
-#wowslider-container1 div{
+
+#wowslider-container1 div {
     margin: 0;
-    width:100% ;
+    width: 100%;
 }
 
 /*****************-------------------Le aside ------------------*/
 #menu-deroulant {
-    padding:0;
-    margin:0;
-    list-style:none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     text-align: center;
     width: 180px;
 }
+
 #menu-deroulant ul {
-    padding:0;
-    margin-bottom:5%;
-    list-style:none;
+    padding: 0;
+    margin-bottom: 5%;
+    list-style: none;
     text-align: center;
 }
+
 #menu-deroulant li {
-    margin-bottom:7%;
-    background-color:#729EBF;
-    background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+    margin-bottom: 7%;
+    background-color: #729EBF;
+    background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
     border-radius: 6px;
     box-shadow: 3px 3px 3px #999;
-    border:solid 1px #333A40
+    border: solid 1px #333A40
 }
+
 #menu-deroulant li li {
-    max-height:0;
+    max-height: 0;
     overflow: hidden;
     transition: all .5s;
-    border-radius:0;
+    border-radius: 0;
     background: #444;
     box-shadow: none;
-    border:none;
-    margin:0
+    border: none;
+    margin: 0
 }
+
 #menu-deroulant a {
-    display:block;
+    display: block;
     text-decoration: none;
     color: #fff;
     padding: 8px 0;
-    font-size:1.2em
+    font-size: 1.2em
 }
+
 #menu-deroulant ul li a, #menu-deroulant li:hover li a {
-    font-size:1em
+    font-size: 1em
 }
+
 #menu-deroulant li:hover {
     background: #729EBF
 }
+
 #menu-deroulant li li:hover {
     background: #999;
 }
+
 #menu-deroulant ul li:last-child {
     border-radius: 0 0 6px 6px;
-    border:none;
+    border: none;
 }
+
 #menu-deroulant li:hover li {
     max-height: 15em;
 }
-#connexion{
-    margin-bottom: 25%;
-}
-#defillement{
+
+#defillement {
     height: 400px;
     padding-left: 0;
 }
-#defillement ul li a{
+
+#defillement ul li a {
     list-style-type: none;
-    text-align:left;
+    text-align: left;
 }
-#connexion form div{
-    margin-bottom: 10%;
+#connexion form{
+    position: relative;
 }
-#login_btn,#logout_btn{
-    margin-left: 45%;
-}
-#connexion p{
+#connexion p {
     color: red;
 }
-#connexion h2{
-    text-align: center;
-}
+
 #connexion a {
     text-decoration: none;
     color: white;
     margin-left: 45%;
-
 }
+
+#connexion span {
+    color: white;
+}
+
 /*-----------------le formulaire------------------*/
-div {
+form div {
     margin-bottom: 3%;
     display: block;
 }
@@ -240,6 +295,7 @@ label {
     color: red;
     margin-left: 35%;
 }
+
 /******************-----le tableau-------------*/
 table {
     width: 80%;
@@ -247,42 +303,53 @@ table {
     border-spacing: 2px;
     caption-side: bottom;
 }
+
 td, th {
     padding: 6px 12px;
 }
+
 th {
     text-align: left;
 }
+
 td:last-child, th:last-child {
     text-align: right;
 }
+
 table caption {
     color: white;
     font-style: italic;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
+
 tr:nth-child(odd) {
     background: #eee;
 }
+
 tr:nth-child(even) {
     background: #ddd;
 }
+
 tr:first-child {
     background: #cba;
     color: white;
 }
+
 table td:empty {
     background: white;
 }
+
 table tr + tr:hover {
     background: #bbb;
-    color:white;
+    color: white;
 }
+
 table tr + tr td:hover, table tr + tr th:hover {
     background: #777;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 fieldset {
     width: 85%;
 }
@@ -291,9 +358,8 @@ fieldset {
     width: 100%;
 }
 
-
 /*****************--------willy verrier--------*******/
 
-h2{
+h2 {
     color: red;
 }
