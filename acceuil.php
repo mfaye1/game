@@ -31,28 +31,36 @@ if ($en_reception && $username_valide && $password_valide)
 
 //    header('Location:')
 
-*/?>
+*/ ?>
 
 <body>
 
 <div id="wrapper">
     <div id="wowslider-container1">
-        <div class="ws_images"><ul>
+        <div class="ws_images">
+            <ul>
                 <li><img src="data1/images/slide2.png" alt="" title="" id="wows1_0"/></li>
                 <li><img src="data1/images/slide3.jpg" alt="" title="" id="wows1_1"/></li>
                 <li><img src="data1/images/slide3_0.png" alt="" title="" id="wows1_2"/></li>
                 <li><img src="data1/images/slide4.jpg" alt="" title="" id="wows1_3"/></li>
-                <li><a href="http://wowslider.com/vi"><img src="data1/images/slide7.jpg" alt="bootstrap carousel" title="" id="wows1_4"/></a></li>
+                <li><a href="http://wowslider.com/vi"><img src="data1/images/slide7.jpg" alt="bootstrap carousel"
+                                                           title="" id="wows1_4"/></a></li>
                 <li><img src="data1/images/slider8.jpg" alt="" title="" id="wows1_5"/></li>
-            </ul></div>
-        <div class="ws_bullets"><div>
+            </ul>
+        </div>
+        <div class="ws_bullets">
+            <div>
                 <a href="#" title=""><span><img src="data1/tooltips/slide2.png" alt=""/>1</span></a>
                 <a href="#" title=""><span><img src="data1/tooltips/slide3.jpg" alt=""/>2</span></a>
                 <a href="#" title=""><span><img src="data1/tooltips/slide3_0.png" alt=""/>3</span></a>
                 <a href="#" title=""><span><img src="data1/tooltips/slide4.jpg" alt=""/>4</span></a>
                 <a href="#" title=""><span><img src="data1/tooltips/slide7.jpg" alt=""/>5</span></a>
                 <a href="#" title=""><span><img src="data1/tooltips/slider8.jpg" alt=""/>6</span></a>
-            </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+            </div>
+        </div>
+        <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by
+            WOWSlider.com v8.7
+        </div>
         <div class="ws_shadow"></div>
     </div>
     <script type="text/javascript" src="engine1/wowslider.js"></script>
@@ -125,9 +133,14 @@ if ($en_reception && $username_valide && $password_valide)
             </main>
         </div>
         <div class="col-4" id="aside">
-
+            <div>
+                <form method="post">
+                    <input type="text" name="search" placeholder="Search..">
+                    <input type="submit" name="rechercher" value="rechercher">
+                </form>
+            </div>
             <div id="defillement">
-                <marquee  direction="down" scrollamount="4" onMouseOver="this.stop();" onMouseOut="this.start();">
+                <marquee direction="down" scrollamount="4" onMouseOver="this.stop();" onMouseOut="this.start();">
                     <ul>
                         <li><a href="#">le <span></span> sera disponible a partir du</a></li>
                         <li><a href="#">le <span></span> sera disponible a partir du</a></li>

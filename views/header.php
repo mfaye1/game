@@ -50,10 +50,7 @@ if (is_logged_in() && array_key_exists('logout_btn', $_POST)) {
         ?>
     </div>
     <div class="col-4">
-        <form method="post">
-            <input type="text" name="search" placeholder="Search..">
-            <input type="submit" name="rechercher" value="rechercher">
-        </form>
+
         <div id="connexion">
 
             <?php if (is_logged_in()) { ?>
@@ -79,15 +76,10 @@ if (is_logged_in() && array_key_exists('logout_btn', $_POST)) {
                     if (array_key_exists('login_btn', $_POST)) { ?>
                         <p>Le pseudo et le mot de passe fournis ne concordent pas.</p>
                     <?php } ?>
-                    <div>
                         <input type="submit" id="login_btn" name="login_btn" value="Connecter"/>
-                    </div>
-                    <div style="visibility: visible">
-                        <a href="inscription.php">s'inscrire</a>
-                    </div>
+                        <a style="visibility: visible" href="inscription.php">s'inscrire</a>
                 </form>
             <?php } ?>
-
 
         </div>
 

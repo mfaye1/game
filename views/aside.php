@@ -1,4 +1,10 @@
 <aside>
+    <div>
+        <form method="post">
+            <input type="text" name="search" placeholder="Search..">
+            <input type="submit" name="rechercher" value="rechercher">
+        </form>
+    </div>
     <ul id="menu-deroulant">
         <li><a href="#">Type de jeu</a>
             <ul>

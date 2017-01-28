@@ -5,7 +5,9 @@
 aside, div, section, header, footer, header div {
     display: block;
 }
-
+p{
+    color: white;
+}
 html {
     font-size: 16px;
     font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
@@ -269,13 +271,18 @@ header div ul li a:hover:after {
 #connexion a {
     text-decoration: none;
     color: white;
-    margin-left: 45%;
+    margin-left: 35%;
 }
 
 #connexion span {
     color: white;
 }
-
+#login{
+    margin-top: -15%;
+}
+#login_btn,#logout_btn{
+    margin-top: 5%;
+}
 /*-----------------le formulaire------------------*/
 form div {
     margin-bottom: 3%;
@@ -362,4 +369,4 @@ fieldset {
 
 h2 {
     color: red;
-}
+}*

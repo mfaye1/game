@@ -26,11 +26,10 @@ $articles = get_articles($where);
 <?php
 require_once 'views/top.php';
 require_once 'views/header.php';
-require_once 'views/aside.php';
 ?>
 <main>
-    <div id="wrapper">
-    <h2>catalogue</h2>
+    <div id="wrapper" class="row">
+        <div class="col-8">
         <?php foreach ($articles as $id => $article) { ?>
             <article>
                 <h2><?= utf8_encode($article['name'])?></h2>
@@ -45,7 +44,11 @@ require_once 'views/aside.php';
             </article>
 
         <?php } ?>
+        </div>
+        <div class="col-4">
+            <?php require_once 'views/aside.php';?>
 
+        </div>
     </div>
 </main>
 <?php
