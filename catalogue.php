@@ -3,7 +3,7 @@ require_once 'define.php';
 require_once 'db/db_access.php';
 require_once 'db/db_define.php';
 define('ARTICLE_IMG_PATH', 'images_png/');
-define('CAT_ID','catid');
+define('CAT_ID', 'catid');
 $page_title = 'Catalogue';
 
 $id_cat = '';
@@ -29,24 +29,23 @@ require_once 'views/header.php';
 ?>
 <main>
     <div id="wrapper" class="row">
-        <div class="col-8">
-        <?php foreach ($articles as $id => $article) { ?>
-            <article>
-                <h2><?= utf8_encode($article['name'])?></h2>
-<!--                <p>--><?//= utf8_encode($article['description'])?><!--</p>-->
-                <img src="<?= ARTICLE_IMG_PATH,$article['image']?>" alt=""/>
-                Prix : <span><?= $article['prix']?></span>
-<!--                <form class ="panier_action" method="post">-->
-<!--                    <input type="submit" name="panier_add" value="Ajouter">-->
-<!--                    <input type="hidden" name="article_id" value="--><?//=$id?><!--"/>-->
-<!--                    <input type="hidden" name="article_name" value="--><?//=utf8_encode($article['name'])?><!--"/>-->
-<!--                </form>-->
-            </article>
-
-        <?php } ?>
+        <div  class=" row col-9">
+            <?php foreach ($articles as $id => $article) { ?>
+                <div id="article" class="col-4">
+                    <div>
+                        <!--<h2><?/*= utf8_encode($article['name']) */?></h2>-->
+                    </div>
+                    <div>
+                        <img src="<?= ARTICLE_IMG_PATH, $article['image'] ?>" alt=""/>
+                    </div>
+                    <div>
+                        Prix : <span><?= $article['prix'] ?></span>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
-        <div class="col-4">
-            <?php require_once 'views/aside.php';?>
+        <div class="col-3">
+            <?php require_once 'views/aside.php'; ?>
 
         </div>
     </div>
