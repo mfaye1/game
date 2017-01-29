@@ -73,38 +73,38 @@ if ($en_reception && $username_valide && $password_valide)
                 <h2>Nouveauté</h2>
                 <section>
                     <div class="cadre_produit">
-                        <img class="" src="" alt="img_produit">
+                        <img class="" src="images_png/assasin_creed_xbox.png" alt="img_produit">
                         <div class="">
-                            <h3>Nom du produit</h3>
-                            <p><span>5.00$</span></p>
-                            <a class="" href="catalogue.php">Plus de détail</a>
+                            <h3>Assasin's creed Syndicate</h3>
+                            <p><span>30.99$</span></p>
+                            <a class="" href="details.php">Plus de détail</a>
                         </div>
                     </div>
 
                     <div class="cadre_produit">
-                        <img class="" src="" alt="img_produit">
+                        <img class="" src="images_png/gta_ps4.png" alt="img_produit">
                         <div class="">
-                            <h3>Nom du produit</h3>
-                            <p><span>5.00$</span></p>
-                            <a class="" href="catalogue.php">Plus de détail</a>
+                            <h3>Grand theft auto V</h3>
+                            <p><span>38.99$</span></p>
+                            <a class="" href="details.php">Plus de détail</a>
                         </div>
                     </div>
 
                     <div class="cadre_produit">
-                        <img class="" src="" alt="img_produit">
+                        <img class="" src="images_png/dragon_ball_ps4.png" alt="img_produit">
                         <div class="">
-                            <h3>Nom du produit</h3>
-                            <p><span>5.00$</span></p>
-                            <a class="" href="catalogue.php">Plus de détail</a>
+                            <h3>Dragon ball xenoverse 2</h3>
+                            <p><span>41.99$</span></p>
+                            <a class="" href="details.php">Plus de détail</a>
                         </div>
                     </div>
 
                     <div class="cadre_produit">
-                        <img class="" src="" alt="img_produit">
+                        <img class="" src="images_png/mass_pc.png" alt="img_produit">
                         <div class="">
-                            <h3>Nom du produit</h3>
-                            <p><span>5.00$</span></p>
-                            <a class="" href="catalogue.php">Plus de détail</a>
+                            <h3>Mass Effect Andromeda</h3>
+                            <p><span>50.99$</span></p>
+                            <a class="" href="details.php">Plus de détail</a>
                         </div>
                     </div>
                 </section>
