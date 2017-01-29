@@ -61,7 +61,7 @@ if (is_logged_in() && array_key_exists('logout_btn', $_POST)) {
                         <input type="submit" id="logout_btn" name="logout_btn" value="Déconnecter"/>
                     <a style="visibility: hidden" href="inscription.php">s'inscrire</a>
                 </form>
-                <img src="images/panier.png" alt="panier" style="visibility: visible">
+                <a href="panier_view.php"><img src="images/panier.png" alt="panier" style="visibility: visible"></a>
 
             <?php } else { ?>
                 <form name="login" id="login" method="post">

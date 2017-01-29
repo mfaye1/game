@@ -35,6 +35,7 @@ if ($en_reception && $username_valide && $password_valide)
 
 <body>
 
+
 <div id="wrapper">
     <div id="wowslider-container1">
         <div class="ws_images">
@@ -71,8 +72,8 @@ if ($en_reception && $username_valide && $password_valide)
 
 
                 <h2>Nouveauté</h2>
-                <section>
-                    <div class="cadre_produit">
+                <section class="row">
+                    <div class="cadre_produit col-6">
                         <img class="" src="images_png/assasin_creed_xbox.png" alt="img_produit">
                         <div class="">
                             <h3>Assasin's creed Syndicate</h3>
@@ -81,7 +82,7 @@ if ($en_reception && $username_valide && $password_valide)
                         </div>
                     </div>
 
-                    <div class="cadre_produit">
+                    <div class="cadre_produit col-6">
                         <img class="" src="images_png/gta_ps4.png" alt="img_produit">
                         <div class="">
                             <h3>Grand theft auto V</h3>
@@ -90,7 +91,7 @@ if ($en_reception && $username_valide && $password_valide)
                         </div>
                     </div>
 
-                    <div class="cadre_produit">
+                    <div class="cadre_produit col-6">
                         <img class="" src="images_png/dragon_ball_ps4.png" alt="img_produit">
                         <div class="">
                             <h3>Dragon ball xenoverse 2</h3>
@@ -99,7 +100,7 @@ if ($en_reception && $username_valide && $password_valide)
                         </div>
                     </div>
 
-                    <div class="cadre_produit">
+                    <div class="cadre_produit col-6">
                         <img class="" src="images_png/mass_pc.png" alt="img_produit">
                         <div class="">
                             <h3>Mass Effect Andromeda</h3>
@@ -164,7 +165,6 @@ if ($en_reception && $username_valide && $password_valide)
         </div>
     </div>
 </div>
-
 </body>
 <?php
 require_once 'views/footer.php';

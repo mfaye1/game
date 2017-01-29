@@ -5,9 +5,11 @@
 aside, div, section, header, footer, header div {
     display: block;
 }
-p{
+
+p {
     color: white;
 }
+
 html {
     font-size: 16px;
     font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
@@ -175,6 +177,20 @@ header div ul li a:hover:after {
     opacity: 1;
 }
 
+/***********************footer**********/
+footer {
+    margin-bottom: 0.1%;
+    height: 150px;
+    display: block;
+    position: relative;
+    background-color: #729EBF;
+    background-image: -webkit-linear-gradient(top, #214767 20%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #214767 20%, #333A40 100%);
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px #999;
+    border: solid 1px #333A40
+}
+
 /*/*************carrousel************************/
 #carrousel {
     height: 300px;
@@ -261,9 +277,11 @@ header div ul li a:hover:after {
     list-style-type: none;
     text-align: left;
 }
-#connexion form{
+
+#connexion form {
     position: relative;
 }
+
 #connexion p {
     color: red;
 }
@@ -277,12 +295,15 @@ header div ul li a:hover:after {
 #connexion span {
     color: white;
 }
-#login{
+
+#login {
     margin-top: -15%;
 }
-#login_btn,#logout_btn{
+
+#login_btn, #logout_btn {
     margin-top: 5%;
 }
+
 /*-----------------le formulaire------------------*/
 form div {
     margin-bottom: 3%;
@@ -370,15 +391,73 @@ fieldset {
 h2 {
     color: red;
 }
+
 #article div:nth-of-type(3) {
     color: white;
     margin-top: 5%;
     text-align: left;
     font-size: 150%;
 }
-aside div:nth-of-type(2){
+
+aside div:nth-of-type(2) {
     margin-top: 20%;
 }
-aside input{
+
+aside input {
     margin-bottom: 5%;
+}
+
+/****************le panier*******/
+.panier u {
+    background-color: #0FDA0F;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.panier ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.panier ul li {
+    background-color: #bed9f7;
+    margin-bottom: 3px;
+    padding: 2px;
+
+}
+
+.panier_control {
+    width: 35px;
+    height: 25px;
+    padding: 5px;
+    background-image: url('/images/panier.png');
+    background-color: #c4dffd;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.panier_control .panier_count {
+    position: absolute;
+    right: 5px;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 25px;
+}
+
+.panier_article_quantite {
+    font-weight: bolder;
+}
+
+.ui-dialog .ui-dialog-content {
+    background-color: #c4dffd;
+}
+
+.panier form {
+    display: inline;
 }
