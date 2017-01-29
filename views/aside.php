@@ -9,12 +9,12 @@
         <ul id="menu-deroulant">
             <li><a href="#">Type de jeu</a>
                 <ul>
-                    <li><a href="#">PS3</a></li>
-                    <li><a href="#">PS4</a></li>
-                    <li><a href="#">PS VITA / PSP</a></li>
-                    <li><a href="#">PC</a></li>
-                    <li><a href="#">Xbox 360</a></li>
-                    <li><a href="#">NINTENDO / DS</a></li>
+                    <li><a href="catalogue.php?catid=8">PS3</a></li>
+                    <li><a href="catalogue.php?catid=1">PS4</a></li>
+                    <li><a href="catalogue.php?catid=5">PS VITA / PSP</a></li>
+                    <li><a href="catalogue.php?catid=3">PC</a></li>
+                    <li><a href="catalogue.php?catid=7">Xbox 360</a></li>
+                    <li><a href="catalogue.php?catid=6">NINTENDO / DS</a></li>
                 </ul>
             </li><!--
  -->

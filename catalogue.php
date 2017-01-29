@@ -40,6 +40,11 @@ require_once 'views/header.php';
                     </div>
                     <div>
                         Prix : <span><?= $article['prix']."$" ?></span>
+                        <form class="panier_action" method="post">
+                            <input type="submit" name="panier_add" value="Ajouter au panier"/>
+                            <input type="hidden" name="article_id" value="<?=$id?>"/>
+                            <input type="hidden" name="article_name" value="<?=utf8_encode($article['name'])?>"/>
+                        </form>
                     </div>
                     <div>
 
