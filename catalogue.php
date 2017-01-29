@@ -29,17 +29,20 @@ require_once 'views/header.php';
 ?>
 <main>
     <div id="wrapper" class="row">
-        <div  class=" row col-9">
+        <div class=" row col-9">
             <?php foreach ($articles as $id => $article) { ?>
                 <div id="article" class="col-4">
                     <div>
-                        <!--<h2><?/*= utf8_encode($article['name']) */?></h2>-->
+                        <!--<h2><? /*= utf8_encode($article['name']) */ ?></h2>-->
                     </div>
                     <div>
-                        <img src="<?= ARTICLE_IMG_PATH, $article['image'] ?>" alt=""/>
+                        <a href="details.php"><img src="<?= ARTICLE_IMG_PATH, $article['image'] ?>" alt=""/></a>
                     </div>
                     <div>
-                        Prix : <span><?= $article['prix'] ?></span>
+                        Prix : <span><?= $article['prix']."$" ?></span>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
             <?php } ?>

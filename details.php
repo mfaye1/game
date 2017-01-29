@@ -11,8 +11,8 @@ require_once 'views/header.php';
 <div id="wrapper" class="row">
     <div class="col-4">
         <img src="images/sonic_wii.jpg">
-        <img src="">
-        <p>425$</p>
+        <p><span>425$</span></p>
+        <img src="images/panier.png">
     </div>
     <div class="col-8 row">
 
