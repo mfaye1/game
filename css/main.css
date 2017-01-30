@@ -190,6 +190,10 @@ footer {
     box-shadow: 3px 3px 3px #999;
     border: solid 1px #333A40
 }
+footer a{
+    color: white;
+
+}
 
 /*/*************carrousel************************/
 #carrousel {
@@ -460,4 +464,9 @@ aside input {
 
 .panier form {
     display: inline;
+}
+/********************contact*****/
+#contact{
+    margin-left: 2%;
+
 }

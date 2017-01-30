@@ -71,42 +71,37 @@ if ($en_reception && $username_valide && $password_valide)
             <main>
 
 
-                <h2>Nouveauté</h2>
+                <h2>Nouveautés</h2>
                 <section class="row">
                     <div class="cadre_produit col-6">
-                        <img class="" src="images_png/assasin_creed_xbox.png" alt="img_produit">
-                        <div class="">
-                            <h3>Assasin's creed Syndicate</h3>
-                            <p><span>30.99$</span></p>
-                            <a class="" href="details.php">Plus de détail</a>
-                        </div>
+                        <h3>Assasin's creed Syndicate</h3>
+                        <a href="catalogue.php"> <img class="" src="images_png/assasin_creed_xbox.png"
+                                                      alt="img_produit"></a>
+                        <p><span>30.99$</span></p>
                     </div>
 
                     <div class="cadre_produit col-6">
-                        <img class="" src="images_png/gta_ps4.png" alt="img_produit">
-                        <div class="">
-                            <h3>Grand theft auto V</h3>
-                            <p><span>38.99$</span></p>
-                            <a class="" href="details.php">Plus de détail</a>
-                        </div>
+                        <h3>Grand theft auto V</h3>
+                        <a href="catalogue.php"> <img class="" src="images_png/gta_ps4.png" alt="img_produit"></a>
+                        <p><span>38.99$</span></p>
+                    </div>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jw8HCFZkBds" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                    <h4>Les Aubaines de la semaine</h4>
+
+                    <div class="cadre_produit col-6">
+                        <h3>Dragon ball xenoverse 2</h3>
+                        <a href="catalogue.php"> <img class="" src="images_png/dragon_ball_ps4.png"
+                                                      alt="img_produit"></a>
+                        <p><span>41.99$</span></p>
                     </div>
 
                     <div class="cadre_produit col-6">
-                        <img class="" src="images_png/dragon_ball_ps4.png" alt="img_produit">
-                        <div class="">
-                            <h3>Dragon ball xenoverse 2</h3>
-                            <p><span>41.99$</span></p>
-                            <a class="" href="details.php">Plus de détail</a>
-                        </div>
-                    </div>
-
-                    <div class="cadre_produit col-6">
+                        <h3>Mass Effect Andromeda</h3>
                         <img class="" src="images_png/mass_pc.png" alt="img_produit">
-                        <div class="">
-                            <h3>Mass Effect Andromeda</h3>
-                            <p><span>50.99$</span></p>
-                            <a class="" href="details.php">Plus de détail</a>
-                        </div>
+                        <p><span>50.99$</span></p>
                     </div>
                 </section>
 
