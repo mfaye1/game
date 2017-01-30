@@ -103,6 +103,22 @@ if ($en_reception && $username_valide && $password_valide)
                         <img class="" src="images_png/mass_pc.png" alt="img_produit">
                         <p><span>50.99$</span></p>
                     </div>
+                    <div class="col-12">
+                        <h4>Les articles a venir</h4>
+                        <ul id="">
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                            <li><a href="#"></a> </li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section id="a_propos">

@@ -5,6 +5,9 @@ require_once 'db/db_define.php';
 define('ARTICLE_IMG_PATH', 'images_png/');
 define('CAT_ID', 'catid');
 $page_title = 'Catalogue';
+require_once '_panier.php';
+require_once 'views/top.php';
+require_once 'views/header.php';
 
 $id_cat = '';
 $where = '';
@@ -24,8 +27,7 @@ $articles = get_articles($where);
 ?>
 
 <?php
-require_once 'views/top.php';
-require_once 'views/header.php';
+
 ?>
 <main>
     <div id="wrapper" class="row">
