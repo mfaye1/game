@@ -1,10 +1,8 @@
 <?php
-require_once '_panier.php';
+$page_title = 'panier';
+require_once 'gestion_panier.php';
 require_once 'views/top.php';
-require_once 'views/header.php';
 ?>
-
-<div class="panier_control"><span class="panier_count"><?= panier_get_count() ?></span></div>
 <div class="panier">
     <?php if (!empty($panier)) { // Des items sont présents ?>
         <ul class="panier_liste">

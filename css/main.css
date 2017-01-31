@@ -194,7 +194,21 @@ footer a{
     color: white;
 
 }
+/***************/
 
+#a_venir li:nth-of-type(odd){
+    background-color: white;
+    margin-bottom: 2%;
+    display: block;
+
+}
+#a_venir li:nth-of-type(odd) a{
+    color: black;
+}
+#a_venir li:nth-of-type(even){
+    background-color: #dddddd;
+    margin-bottom: 2%;
+}
 /*/*************carrousel************************/
 #carrousel {
     height: 300px;
@@ -301,7 +315,7 @@ footer a{
 }
 
 #login {
-    margin-top: -15%;
+    /*margin-top: -15%;*/
 }
 
 #login_btn, #logout_btn {
@@ -392,7 +406,7 @@ fieldset {
 
 /*****************--------willy verrier--------*******/
 
-h2 {
+h2,h4{
     color: red;
 }
 
@@ -469,4 +483,8 @@ aside input {
 #contact{
     margin-left: 2%;
 
+}
+/****le tout*/
+.ui-dialog{
+    display: block;
 }

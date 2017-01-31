@@ -1,9 +1,11 @@
 <?php
-require_once 'views/header.php';
 define('PS_PANIER','panier'); // Nom du panier en session
 define('PS_PANIER_ITEM_QTY','qty'); // Qté article dans le panier
 define('PS_PANIER_ITEM_NAME','desc'); // Nom pour l'utilisateur
 // Création du panier s'il n'existe pas
+
+$page_title = '_panier';
+session_start();
 if ( ! array_key_exists(PS_PANIER , $_SESSION)) {
     $_SESSION[PS_PANIER] = array();
 }
@@ -44,4 +46,3 @@ if (array_key_exists('panier_add', $_POST) && array_key_exists('article_id', $_P
     $panier = array();
 }
 
-var_dump($_POST);

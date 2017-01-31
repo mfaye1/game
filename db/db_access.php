@@ -2,8 +2,8 @@
 /**
  *
  */
-require_once ('db_define.php');
-
+require_once('db_define_local.php');
+//require_once('db_define.php');
 $mysqli = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
 if ($mysqli->connect_errno) {
     echo "Echec lors de la connexion à MySQL : ", $mysqli->connect_error;

@@ -1,8 +1,7 @@
 <?php
 require_once 'user_authenticate.php'; // Code pour authentification
 define('PS_USERNAME', 'ps_username');
-
-session_start(); // Démarrage session
+require_once 'panier.php';
 
 function is_logged_in()
 {
@@ -61,7 +60,7 @@ if (is_logged_in() && array_key_exists('logout_btn', $_POST)) {
                         <input type="submit" id="logout_btn" name="logout_btn" value="Déconnecter"/>
                     <a style="visibility: hidden" href="inscription.php">s'inscrire</a>
                 </form>
-                <a href="panier.php"><img src="images/panier.png" alt="panier" style="visibility: visible"></a>
+                   <a href="panier.php"> <p>Panier <span class="panier_count"><?= panier_get_count() ?></span></p></a>
 
             <?php } else { ?>
                 <form name="login" id="login" method="post">

@@ -1,11 +1,11 @@
 <?php
 require_once 'define.php';
 require_once 'db/db_access.php';
-require_once 'db/db_define.php';
+require_once 'db/db_define_local.php';
 define('ARTICLE_IMG_PATH', 'images_png/');
 define('CAT_ID', 'catid');
 $page_title = 'Catalogue';
-require_once '_panier.php';
+require_once 'gestion_panier.php';
 require_once 'views/top.php';
 require_once 'views/header.php';
 
