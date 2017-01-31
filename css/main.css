@@ -102,7 +102,7 @@ li a {
 
 header {
     margin-bottom: 0.1%;
-    height: 150px;
+    height: 200px;
     display: block;
     position: relative;
     background-color: #729EBF;
@@ -180,7 +180,7 @@ header div ul li a:hover:after {
 /***********************footer**********/
 footer {
     margin-bottom: 0.1%;
-    height: 150px;
+    height: 300px;
     display: block;
     position: relative;
     background-color: #729EBF;
@@ -192,7 +192,9 @@ footer {
 }
 footer a{
     color: white;
-
+}
+footer h1{
+    font-size: 14px;
 }
 /***************/
 
@@ -287,12 +289,14 @@ footer a{
 }
 
 #defillement {
+    margin-top: 2%;
     height: 400px;
     padding-left: 0;
 }
 
 #defillement ul li a {
     list-style-type: none;
+    color: white;
     text-align: left;
 }
 
